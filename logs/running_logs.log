@@ -1,1 +1,209 @@
 [2023-10-06 11:23:14,368: INFO: main: We are printing the logs here!!!]
+[2023-10-06 13:33:55,206: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:33:55,208: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:38:35,117: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:38:35,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:39:11,958: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:39:11,960: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:39:11,962: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 13:39:11,964: INFO: common: created directory at: artifacts]
+[2023-10-06 13:39:11,964: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 13:39:12,606: INFO: 3855283261: artifacts/data_ingestion/data.zip download! with following info: 
+Server: GitHub.com
+Date: Fri, 06 Oct 2023 08:09:11 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"e7ca269063e7718e15689ee7680c4959"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.githubcopilot.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events objects-origin.githubusercontent.com *.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ wss://*.actions.githubusercontent.com github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com support.github.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=VdAWUwNUGoMhz%2B%2FVwGhdnK%2FsDRsJVY6xj2LBQObPf6sLM3UWhN0C8ioOj9olEOyFoWizWjeoB%2Bb%2FqAF%2B49uPv9FO5HYySpvm3bQo7Iz%2FVlg2IfjPmJqENPdJPEeQjbMd3TGNvmF4x8Ufwo72tMagTyQJRu3V3OtBQI%2BOi3Q4cqsHCzOGnXx6bAR4gkz7xWlRGVEzA0ANfNsBShVoiDkDyAZGqxvln%2FqS112RgyRNd53pThQQ5IsC8y2DYg%2BbPMN36TeZDND1Ms9M4tdw7M9kNg%3D%3D--yBc8mb2kcRISc4%2Bz--oXlx7kzBjgigwoXnNIDl0w%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.152116711.1696579750; Path=/; Domain=github.com; Expires=Sun, 06 Oct 2024 08:09:10 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Sun, 06 Oct 2024 08:09:10 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: DECD:FE36F:3090BD:346523:651FC0A6
+connection: close
+
+]
+[2023-10-06 13:42:44,353: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:42:44,355: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:42:44,356: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 13:42:44,357: INFO: common: created directory at: artifacts]
+[2023-10-06 13:42:44,358: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 13:42:44,359: INFO: 3855283261: File already exists of size: ~ 121 KB]
+[2023-10-06 13:44:09,988: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:44:09,991: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:44:09,992: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 13:44:09,994: INFO: common: created directory at: artifacts]
+[2023-10-06 13:44:09,995: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 13:44:18,330: INFO: 3855283261: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23822910
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f4246101046ab813cef40063e153d8f0cfea22e056024b3250681465c25220fe"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E69A:13F2C:AA07F:12F4D7:651FC1D4
+Accept-Ranges: bytes
+Date: Fri, 06 Oct 2023 08:14:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21727-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1696580053.991532,VS0,VE1631
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8786b21a0c3b208bd15305809bba146c4672429c
+Expires: Fri, 06 Oct 2023 08:19:14 GMT
+Source-Age: 1
+
+]
+[2023-10-06 13:49:01,365: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:49:01,366: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:49:01,368: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 13:49:01,369: INFO: common: created directory at: artifacts]
+[2023-10-06 13:49:01,369: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 13:49:01,370: INFO: 3855283261: File already exists of size: ~ 23265 KB]
+[2023-10-06 13:49:14,531: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\src\mlProject\config\config.yaml loaded successfully]
+[2023-10-06 13:49:14,532: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 13:49:14,533: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 13:49:14,535: INFO: common: created directory at: artifacts]
+[2023-10-06 13:49:14,536: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 13:49:17,966: INFO: 3855283261: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23822910
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f4246101046ab813cef40063e153d8f0cfea22e056024b3250681465c25220fe"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E69A:13F2C:AA07F:12F4D7:651FC1D4
+Accept-Ranges: bytes
+Date: Fri, 06 Oct 2023 08:19:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21723-DEL
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1696580354.827559,VS0,VE322
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 68f072cfe097f208d178302e29378a8b21123df7
+Expires: Fri, 06 Oct 2023 08:24:14 GMT
+Source-Age: 0
+
+]
+[2023-10-06 14:30:31,024: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:30:31,026: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:30:31,028: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:30:31,029: INFO: common: created directory at: artifacts]
+[2023-10-06 14:30:31,030: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:30:31,031: INFO: 3855283261: File already exists of size: ~ 23265 KB]
+[2023-10-06 14:30:47,449: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:30:47,452: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:30:47,455: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:30:47,457: INFO: common: created directory at: artifacts]
+[2023-10-06 14:30:47,458: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:32:17,124: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:32:17,127: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:32:17,129: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:32:17,130: INFO: common: created directory at: artifacts]
+[2023-10-06 14:32:17,131: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:33:51,045: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:33:51,048: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:33:51,052: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:33:51,054: INFO: common: created directory at: artifacts]
+[2023-10-06 14:33:51,056: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:35:08,336: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:35:08,339: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:35:08,340: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:35:08,341: INFO: common: created directory at: artifacts]
+[2023-10-06 14:35:08,342: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:35:17,958: INFO: 3855283261: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23822910
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f4246101046ab813cef40063e153d8f0cfea22e056024b3250681465c25220fe"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E69A:13F2C:AA07F:12F4D7:651FC1D4
+Accept-Ranges: bytes
+Date: Fri, 06 Oct 2023 09:05:07 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21725-DEL
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1696583108.662127,VS0,VE288
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1dd45f5f50a15a679a5dc0d3bd9fa63aa5d0d3e1
+Expires: Fri, 06 Oct 2023 09:10:07 GMT
+Source-Age: 0
+
+]
+[2023-10-06 14:35:38,107: INFO: common: yaml file: D:\HourlyConsumptiomXGboost\config\config.yaml loaded successfully]
+[2023-10-06 14:35:38,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:35:38,111: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:35:38,112: INFO: common: created directory at: artifacts]
+[2023-10-06 14:35:38,113: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:35:38,115: INFO: 3855283261: File already exists of size: ~ 23265 KB]
+[2023-10-06 14:53:01,519: INFO: main: We are printing the logs here!!!]
+[2023-10-06 14:53:01,519: INFO: main: -----------stage Data Ingestion started------------]
+[2023-10-06 14:53:01,521: ERROR: main: DataIngestionTrainingPipeline.main() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\main.py", line 11, in <module>
+    obj.main()
+TypeError: DataIngestionTrainingPipeline.main() missing 1 required positional argument: 'self'
+[2023-10-06 14:53:22,586: INFO: main: We are printing the logs here!!!]
+[2023-10-06 14:53:22,586: INFO: main: -----------stage Data Ingestion started------------]
+[2023-10-06 14:53:22,588: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-06 14:53:22,589: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-06 14:53:22,589: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-06 14:53:22,589: INFO: common: created directory at: artifacts]
+[2023-10-06 14:53:22,590: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-06 14:53:26,510: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23822910
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "f4246101046ab813cef40063e153d8f0cfea22e056024b3250681465c25220fe"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: E69A:13F2C:AA07F:12F4D7:651FC1D4
+Accept-Ranges: bytes
+Date: Fri, 06 Oct 2023 09:23:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21732-DEL
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1696584202.987303,VS0,VE309
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 57bcbcd9811f52db928b6c0af5e669d2719e23da
+Expires: Fri, 06 Oct 2023 09:28:22 GMT
+Source-Age: 0
+
+]
+[2023-10-06 14:53:27,343: INFO: main: ----------------Data Ingestion completed---------------------]
