@@ -2,14 +2,19 @@
 
 import json
 import os
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
 import joblib
+import pandas as pd
 import yaml
 from box import ConfigBox
 from box.exceptions import BoxValueError
+from dotenv import load_dotenv
 from ensure import ensure_annotations
+from pymongo import MongoClient
+
 from src.mlProject import logger
 
 
@@ -113,7 +118,7 @@ def load_bin(path: Path) -> Any:
 @ensure_annotations
 def get_size(path: Path) -> str:
     """get size in KB
-
+       memory_usage = hourly_data.memory_usage(deep=True).sum() / (1024 ** 2)
     Args:
         path (Path): path of the file
 
@@ -122,3 +127,61 @@ def get_size(path: Path) -> str:
     """
     size_in_kb = round(os.path.getsize(path) / 1024)
     return f"~ {size_in_kb} KB"
+
+
+@ensure_annotations
+def convert_datetime(input_datetime):
+    parsed_datetime = datetime.strptime(input_datetime, '%Y-%m-%dT%H:%M')
+    formatted_datetime = parsed_datetime.strftime('%Y-%m-%d %H:%M:%S')
+    return formatted_datetime
+
+
+@ensure_annotations
+def get_mongoData():
+    load_dotenv()
+    ''' calling DB configuration '''
+
+    logger.info("calling DB configuration")
+    db = os.getenv("db")
+    host = os.getenv("host")
+    port = os.getenv("port")
+    collection = os.getenv("collection")
+
+    MONGO_URL = f"mongodb://{host}:{port}"
+
+    ''' Read data from DB'''
+
+    '''Writing logs'''
+    logger.info("Reading data from Mongo DB")
+
+    '''Exception Handling'''
+
+    try:
+        client = MongoClient(MONGO_URL)
+        db1 = client[db]
+        collection = db1[collection]
+        logger.info("Connection Establish", collection)
+        data = collection.find({"site_id": "6075bb51153a20.38235471"},
+                               {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1})
+
+        dataList = []
+        for doc in data:
+            location_id = doc["location_id"]
+            creation_time = doc["data"]["creation_time"]
+            grid_reading_kwh = doc["data"]["grid_reading_kwh"]
+
+            dataList.append({
+                "location_id": location_id,
+                "creation_time": creation_time,
+                "grid_reading_kwh": grid_reading_kwh
+            })
+        df = pd.DataFrame(dataList)
+
+        print("===============DataType Conversion==================")
+
+        df['creation_time'] = pd.to_datetime(df['creation_time'])
+        df['grid_reading_kwh'] = df['grid_reading_kwh'].astype(float)
+        return df
+
+    except Exception as e:
+        logger.info(f"Error occurs =========== {e}")

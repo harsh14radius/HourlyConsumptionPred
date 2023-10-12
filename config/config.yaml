@@ -3,15 +3,31 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/bhattshubham1401/HourlyConsumptionPred/raw/master/PVVNL5.grid_log.zip
-  local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
-
+#  source_URL:  src/mlProject/components/data_ingestion/DataIngestion will do dynamic
+  local_data_file: artifacts/data_ingestion/data.parquet
 
 data_validation:
-  root_dir: artifacts/data_validation
-  unzip_data_dir: artifacts/data_ingestion/PVVNL4.grid_log.csv
-  STATUS_FILE: artifacts/data_validation/status.txt
+  root_dir: artifact/data_validation
+  STATUS_FILE: artifact/data_validation/status.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

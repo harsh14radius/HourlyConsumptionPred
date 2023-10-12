@@ -1,1 +1,7 @@
-key: val
+COLUMNS:
+data.creation_time: timestamp
+
+
+TARGET_COLUMN:
+  data.grid_reading_kwh: float64
+  location_id: str
