@@ -160,9 +160,11 @@ def get_mongoData():
         client = MongoClient(MONGO_URL)
         db1 = client[db]
         collection = db1[collection]
-        logger.info("Connection Establish", collection)
-        data = collection.find({"site_id": "6075bb51153a20.38235471"},
-                               {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1})
+
+        # logger.info("Connection Establish", collection)
+        data = collection.find(
+            {"site_id": "6075bb51153a20.38235471", "location_id": {"$exists": True, "$ne": None, "$ne": ""}},
+            {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1})
 
         dataList = []
         for doc in data:
@@ -175,6 +177,7 @@ def get_mongoData():
                 "creation_time": creation_time,
                 "grid_reading_kwh": grid_reading_kwh
             })
+
         df = pd.DataFrame(dataList)
 
         print("===============DataType Conversion==================")

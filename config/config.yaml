@@ -7,8 +7,9 @@ data_ingestion:
   local_data_file: artifacts/data_ingestion/data.parquet
 
 data_validation:
-  root_dir: artifact/data_validation
-  STATUS_FILE: artifact/data_validation/status.txt
+  root_dir: artifacts/data_validation
+  data_dir: artifacts/data_ingestion/data.parquet
+  STATUS_FILE: artifacts/data_validation/status.txt
 
 
 

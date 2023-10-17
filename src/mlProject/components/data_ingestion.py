@@ -14,8 +14,6 @@ class DataIngestion:
             logger.info("Reading Completed from MongoDB")
             logger.info("Writing data in Parquet file")
             data.to_parquet(self.config.local_data_file, index=False, engine='fastparquet')
-            read_df = pd.read_parquet(self.config.local_data_file)
-            print(read_df)
 
         except Exception as e:
             print(f"Error in Ingestion Procss: {e}")

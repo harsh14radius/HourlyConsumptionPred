@@ -22,16 +22,29 @@ class ConfigurationManager:
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
             # source_URL=config.source_URL,
-            local_data_file=config.local_data_file
+            local_data_file1=config.local_data_file1,
+            local_data_file2=config.local_data_file2,
+            local_data_file3=config.local_data_file3,
+            local_data_file4=config.local_data_file4,
+            local_data_file5=config.local_data_file5,
+            local_data_file6=config.local_data_file6,
+            local_data_file7=config.local_data_file7,
+            local_data_file8=config.local_data_file8,
+            local_data_file9=config.local_data_file9,
+            local_data_file10=config.local_data_file10,
+            local_data_file11=config.local_data_file11,
         )
         return data_ingestion_config
 
     def get_data_validation_config(self) -> DataValidationConfig:
         config = self.config.data_validation
+        schema = self.schema.COLUMNS
         create_directories([config.root_dir])
 
         data_validation_config = DataValidationConfig(
             root_dir=config.root_dir,
-            STATUS_FILE=config.STATUS_FILE
+            data_dir=config.data_dir,
+            STATUS_FILE=config.STATUS_FILE,
+            all_schema=schema
         )
         return data_validation_config

@@ -1,7 +1,9 @@
 COLUMNS:
-data.creation_time: timestamp
+  creation_time: datetime64[ns]
+  grid_reading_kwh: float64
+  location_id: object
 
 
 TARGET_COLUMN:
-  data.grid_reading_kwh: float64
-  location_id: str
+  grid_reading_kwh: float64
+  location_id: object
