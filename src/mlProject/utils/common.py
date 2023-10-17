@@ -164,7 +164,7 @@ def get_mongoData():
         # logger.info("Connection Establish", collection)
         data = collection.find(
             {"site_id": "6075bb51153a20.38235471", "location_id": {"$exists": True, "$ne": None, "$ne": ""}},
-            {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1})
+            {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1}).limit(1000)
 
         dataList = []
         for doc in data:
