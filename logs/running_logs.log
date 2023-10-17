@@ -1739,3 +1739,90 @@ TypeError: DataIngestionConfig.__init__() got an unexpected keyword argument 'lo
 [2023-10-17 14:11:35,300: INFO: common: created directory at: artifacts]
 [2023-10-17 14:11:35,300: INFO: common: created directory at: artifacts/data_validation]
 [2023-10-17 14:11:35,310: INFO: main: >>>>>>>>>>>>>>>>>Stage Data Validation Completed<<<<<<<<<<<]
+[2023-10-17 14:14:40,275: INFO: main: We are printing the logs here!!!]
+[2023-10-17 14:14:40,276: INFO: main: -----------Stage Data Ingestion Started------------]
+[2023-10-17 14:14:40,277: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-17 14:14:40,277: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-17 14:14:40,278: INFO: common: yaml file: schema.yaml loaded successfully]
+[2023-10-17 14:14:40,278: INFO: common: created directory at: artifacts]
+[2023-10-17 14:14:40,278: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-17 14:14:40,278: ERROR: main: "'ConfigBox' object has no attribute 'local_data_file1'"]
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'local_data_file1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'local_data_file1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'local_data_file1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'local_data_file1'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\HourlyConsumptiomXGboost\main.py", line 12, in <module>
+    obj.main()
+  File "D:\HourlyConsumptiomXGboost\src\mlProject\pipeline\stage_01_data_ingestion.py", line 19, in main
+    raise e
+  File "D:\HourlyConsumptiomXGboost\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\src\mlProject\config\configuration.py", line 25, in get_data_ingestion_config
+    local_data_file1=config.local_data_file1,
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\HourlyConsumptiomXGboost\venv\Lib\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file1'"

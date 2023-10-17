@@ -22,17 +22,7 @@ class ConfigurationManager:
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
             # source_URL=config.source_URL,
-            local_data_file1=config.local_data_file1,
-            local_data_file2=config.local_data_file2,
-            local_data_file3=config.local_data_file3,
-            local_data_file4=config.local_data_file4,
-            local_data_file5=config.local_data_file5,
-            local_data_file6=config.local_data_file6,
-            local_data_file7=config.local_data_file7,
-            local_data_file8=config.local_data_file8,
-            local_data_file9=config.local_data_file9,
-            local_data_file10=config.local_data_file10,
-            local_data_file11=config.local_data_file11,
+            local_data_file=config.local_data_file
         )
         return data_ingestion_config
 
