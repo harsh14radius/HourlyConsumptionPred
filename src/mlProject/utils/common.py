@@ -160,31 +160,44 @@ def get_mongoData():
         client = MongoClient(MONGO_URL)
         db1 = client[db]
         collection = db1[collection]
+        skip_count = 0
+        range_size = 10000000
+        limit_count = range_size
+        df_list = []
 
-        # logger.info("Connection Establish", collection)
-        data = collection.find(
-            {"site_id": "6075bb51153a20.38235471", "location_id": {"$exists": True, "$ne": None, "$ne": ""}},
-            {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1}).limit(1000)
+        for i in range(13):
+            # logger.info("Connection Establish", collection)
+            filter_query = {"site_id": "6075bb51153a20.38235471",
+                            "location_id": {"$exists": True, "$ne": None, "$ne": ""}}
+            data = collection.find(filter_query,
+                                   {"location_id": 1, "data.creation_time": 1, "data.grid_reading_kwh": 1}).skip(
+                skip_count).limit(limit_count)
 
-        dataList = []
-        for doc in data:
-            location_id = doc["location_id"]
-            creation_time = doc["data"]["creation_time"]
-            grid_reading_kwh = doc["data"]["grid_reading_kwh"]
+            dataList = []
 
-            dataList.append({
-                "location_id": location_id,
-                "creation_time": creation_time,
-                "grid_reading_kwh": grid_reading_kwh
-            })
+            for doc in data:
+                location_id = doc["location_id"]
+                creation_time = doc["data"]["creation_time"]
+                grid_reading_kwh = doc["data"]["grid_reading_kwh"]
 
-        df = pd.DataFrame(dataList)
+                dataList.append({
+                    "location_id": location_id,
+                    "creation_time": creation_time,
+                    "grid_reading_kwh": grid_reading_kwh
+                })
+
+            if dataList:
+                df = pd.DataFrame(dataList)
+                df['creation_time'] = pd.to_datetime(df['creation_time'])
+                df['grid_reading_kwh'] = df['grid_reading_kwh'].astype(float)
+
+            skip_count += range_size
+            df_list.append(df)
 
         print("===============DataType Conversion==================")
 
-        df['creation_time'] = pd.to_datetime(df['creation_time'])
-        df['grid_reading_kwh'] = df['grid_reading_kwh'].astype(float)
-        return df
+        # The following code to convert and return df_list is still valid
+        return df_list
 
     except Exception as e:
         logger.info(f"Error occurs =========== {e}")

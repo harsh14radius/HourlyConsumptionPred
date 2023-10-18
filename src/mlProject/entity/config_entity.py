@@ -5,8 +5,7 @@ from pathlib import Path
 @dataclass(frozen=True)
 class DataIngestionConfig:
     root_dir: Path
-    local_data_file: Path
-
+    local_data_file1: Path
 
 @dataclass(frozen=True)
 class DataValidationConfig:

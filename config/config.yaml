@@ -4,7 +4,7 @@ artifacts_root: artifacts
 data_ingestion:
   root_dir: artifacts/data_ingestion
 #  source_URL:  src/mlProject/components/data_ingestion/DataIngestion will do dynamic
-  local_data_file: artifacts/data_ingestion/data.parquet
+  local_data_file1: artifacts/data_ingestion/
 
 data_validation:
   root_dir: artifacts/data_validation
